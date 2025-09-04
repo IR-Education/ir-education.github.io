@@ -52,7 +52,11 @@
   <a class="home-button" href="/">Go to Homepage Now</a>
 </main>
 <footer>
-  <p>&copy; 2025 IREducation. All rights reserved. | Operates under Oxford Advanced Learning in the UK</p>
+  <p>&copy; <span id="current-year"></span> IREducation. All rights reserved. | Operates under Oxford Advanced Learning in the UK</p>
+
+  <script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </footer>
 </body>
 </html>
