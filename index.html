@@ -10,7 +10,7 @@
     .iframe-wrapper {
       position: relative;
       width: 100%;
-      padding-top: 56.25%; /* 16:9 ratio = 9/16 = 0.5625 = 56.25% */
+      padding-top: 56.25%; /* 16:9 ratio */
       overflow: hidden;
       border-radius: 16px;
     }
@@ -24,28 +24,41 @@
       border: none;
       border-radius: 16px;
     }
+
+    .profile-section {
+      margin-top: 40px;
+      background-color: #f7f7f7;
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    .profile {
+      margin-bottom: 32px;
+    }
+
+    .profile h3 {
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .profile p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .profile a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .profile a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
-<style>
-  .iframe-wrapper {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 ratio = 9/16 = 0.5625 = 56.25% */
-    overflow: hidden;
-    border-radius: 16px;
-  }
-
-  .iframe-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 16px;
-  }
-</style>
 <body>
 
 <header>
@@ -75,17 +88,38 @@
 <section id="about">
   <h2>About IREducation</h2>
   <p><strong>IREducation (InteRactive Education)</strong> is an innovative education company based in Hong Kong, operating in China and the UK, where the latter is run under <em>Oxford Advanced Learning</em>. We are building a complete ecosystem that redefines the way students, teachers, and institutions engage with education.</p>
-  <p>With a strong focus on Mathematics, Sciences, and university preparation, our long-term vision is to become the leading educational corporation in the UK — an all-encompassing “educational emporium” offering tools for students, teachers, and institutions.</p><p>
-We aim to develop and deploy a suite of AI-driven tools, state-of-the-art digital platforms, and high-quality curricular content aligned with national standards. This initiative is designed not only to fill current educational gaps but to anticipate and shape the future of learning through innovation, accessibility, and academic excellence. </p>
-<div class="iframe-wrapper">
-<iframe src="https://isaacteng.github.io/globe" style="border-radius: 16px; overflow: hidden; border: none;"></iframe>
-</div>
+  <p>With a strong focus on Mathematics, Sciences, and university preparation, our long-term vision is to become the leading educational corporation in the UK — an all-encompassing “educational emporium” offering tools for students, teachers, and institutions.</p>
+  <p>We aim to develop and deploy a suite of AI-driven tools, state-of-the-art digital platforms, and high-quality curricular content aligned with national standards. This initiative is designed not only to fill current educational gaps but to anticipate and shape the future of learning through innovation, accessibility, and academic excellence.</p>
+
+  <div class="iframe-wrapper">
+    <iframe src="https://isaacteng.github.io/globe" style="border-radius: 16px; overflow: hidden; border: none;"></iframe>
+  </div>
+
+  <div class="profile-section">
+    <div class="profile">
+      <h3>Isaac Teng</h3>
+      <p>I am based in Hong Kong and the founder of <strong>IREducation Inc.</strong>, and also a <strong>MSci Mathematics and Physics</strong> student at University College London. I am the lead programmer for our products such as <strong>TeacherSearch</strong> and <strong>IRMaths</strong>, with my main expertise lying in PHP development and backend server management, including deployment and maintenance of web applications.</p>
+      <p>I also specialize in application assistance for undergraduate students wishing to apply to the sciences and the business sector, providing help for personal statements, interview preparation and admissions test training. For all enquiries concerning undergraduate applications, please direct your messages to: <a href="mailto:oxfordadvancedlearning@gmail.com" target="_blank">oxfordadvancedlearning@gmail.com</a>.</p>
+      <!-- <p>My other positions include <strong>Chief Technology Officer</strong> at <strong>KOVI Inc.</strong>, a Shenzhen-based sustainable sportswear startup. For collaborations, please contact <a href="mailto:isaac.teng@kovi.com.hk" target="_blank">isaac.teng@kovi.com.hk</a>.</p> -->
+      <p><strong>Personal Website:</strong> <a href="https://isaacteng.github.io" target="_blank">isaacteng.github.io</a><br>
+      <strong>Email:</strong> <a href="mailto:isaacteng@ireducation.org" target="_blank">isaacteng@ireducation.org</a></p>
+    </div>
+  </div>
+  <div class="profile-section">
+    <div class="profile">
+      <h3>Robert Hainitz</h3>
+      <p>For the second part of my professional career, I have been an exceptionally accomplished <strong>physics and mathematics teacher and lecturer</strong> with a proven track record. Before this, I was a highly successful executive in the ICT technical support business, managing organisations of over 300 people. I combine commercial know-how with excellent operational and people management skills, and I am a conceptual, strategic thinker with advanced analytical capabilities who employs both commercial and scientific methodologies to achieve operational goals and business targets.</p>
+      <p>I am based in Oxford, UK, and am the founder of <strong>Oxford Advanced Learning (OAL)</strong>, a company initiative dedicated to providing premium services for the educational sector. These services include consultancy for university applications, private tutoring with a team of subject specialists, and software products that help teachers and schools in the recruitment process (<strong>TeacherSearch</strong>) and in advanced digital learning (<strong>IRMaths</strong>). OAL’s software products are at the frontier of modern pedagogy, incorporating advanced AI capabilities based on Google’s Gemini platform.</p>
+      <p><strong>Oxford Advanced Learning</strong> works in close partnership with <strong>IREducation</strong>, a dynamic company founded by one of my former prodigy students.</p>
+      <p><strong>Email:</strong> <a href="mailto:roberthainitz@ireducation.org" target="_blank">roberthainitz@ireducation.org</a> / <a href="mailto:oxfordadvancedlearning@gmail.com" target="_blank">oxfordadvancedlearning@gmail.com</a></p>
+    </div>
+  </div>
 </section>
 
 <section id="platforms">
   <h2>Our Platforms</h2>
   <h3>IR Series – Subject Platforms</h3>
-  <p>The IR Series includes subject-specific platforms starting with <strong>IRMaths</strong>, launching December 2025 with full alignment to the Edexcel A-Level syllabus. Future platforms include <strong>IRChemistry</strong> and <strong>IRPhysics</strong>.</p>
+  <p>The IR Series includes subject-specific platforms starting with <strong>IRMaths</strong>, launching in 2026 with full alignment to the Edexcel A-Level syllabus. Future platforms include <strong>IRChemistry</strong> and <strong>IRPhysics</strong>.</p>
   <ul>
     <li>Interactive topic-based learning</li>
     <li>AI diagnostics and feedback</li>
@@ -94,7 +128,7 @@ We aim to develop and deploy a suite of AI-driven tools, state-of-the-art digita
   </ul>
   <div style="display: flex; justify-content: center; margin-top: 20px;">
     <a href="https://irmaths.github.io" target="_blank" rel="noopener noreferrer" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-      <img src="assets/irmaths_uk.jpg" alt="IRMaths Logo" style="max-height: 250px; border-radius: 0;">
+      <img src="assets/irmaths_uk.png" alt="IRMaths Logo" style="max-height: 250px; border-radius: 0;">
       <span style="margin-top: 10px;">Visit IRMaths</span>
     </a>
   </div>
@@ -108,6 +142,7 @@ We aim to develop and deploy a suite of AI-driven tools, state-of-the-art digita
     <li>UCAS, Oxbridge and Hong Kong application coaching, including admissions test and interview preparation</li>
     <li>Personal statement editing by experienced Oxbridge and G5 university advisors</li>
   </ul>
+  <p>Beyond entrance preparation, we act as <strong>academic advisors</strong> for both college and university students. Leveraging our experience in <strong>academic pathway planning</strong>, we provide strategic guidance on course selection, major specialization, and long-term career alignment.</p>
   <p>All tutoring is delivered by a diverse team of Oxbridge graduates and G5 university students, ensuring subject-matched expertise and personalized guidance. Our programme is built around three pillars: efficiency, quality, and goal orientation — helping students excel in competitive applications.</p>
   <p>This service will be integrated into our core platform and offered under premium tiers.</p><br>
   <a href="https://wp.me/pf9A2J-z7" target="_blank"><p style="text-align: center;">Click here to register for our leading IELTS course. </p></a>
@@ -115,33 +150,26 @@ We aim to develop and deploy a suite of AI-driven tools, state-of-the-art digita
 
 <section id="ai-tutor">
   <h2>IR-AI: Adaptive Educational Tutor</h2>
-  <p>This is a highly advanced, interactive and personalised AI tutor, designed to retain user memory and adapt dynamically to each student’s learning style, pace, and academic goals. Scheduled for launch before March 2026, this AI system will be integrated across all of our educational platforms, including IRMaths, IRChemistry, and IRPhysics. It will also be offered as a standalone model for institutional licensing and commercial sale.</p><p>
-
-Built on advanced natural language processing and reinforcement learning, the system provides real-time feedback, adaptive difficulty progression, and exam-focused coaching. Designed with ethical AI principles at its core, it also includes features to support SEND learners, ensuring accessibility and inclusivity for a diverse student population.
-</p>
-<br>
+  <p>This is a highly advanced, interactive and personalised AI tutor, designed to retain user memory and adapt dynamically to each student’s learning style, pace, and academic goals. Scheduled for launch before March 2026, this AI system will be integrated across all of our educational platforms, including IRMaths, IRChemistry, and IRPhysics. It will also be offered as a standalone model for institutional licensing and commercial sale.</p>
+  <p>Built on advanced natural language processing and reinforcement learning, the system provides real-time feedback, adaptive difficulty progression, and exam-focused coaching. Designed with ethical AI principles at its core, it also includes features to support SEND learners, ensuring accessibility and inclusivity for a diverse student population.</p><br>
   <p style="text-align:center;"><strong>Preview the IRMaths Tutor prototype:</strong> <a href="https://isaacteng.github.io/irmaths-helper" target="_blank">Try the Demo</a></p>
 </section>
 
 <section id="teachersearch">
   <h2>TeacherSearch – TAP Platform</h2>
-  <p>Our <strong>Teacher Applicational Platform (TAP)</strong> addresses inefficiencies in educator recruitment. Teachers create unified profiles while schools can filter and recruit with precision. Launching September 2025, TeacherSearch will:</p>
+  <p>Our <strong>Teacher Applicational Platform (TAP)</strong> addresses inefficiencies in educator recruitment. Teachers create unified profiles while schools can filter and recruit with precision. Launching late 2025, TeacherSearch will:</p>
   <ul>
     <li>Streamline job applications</li>
     <li>Support state schools facing shortages</li>
     <li>Create a centralised hiring ecosystem</li>
   </ul>
-  <p>
-    Designed with teachers in mind, this platform eliminates the need for repetitive, manual form-filling across different schools and institutions. Instead, educators can create a comprehensive, centralised profile detailing their qualifications, experience, and teaching preferences. Schools will then be able to search, filter, and connect directly with suitable candidates who have expressed interest in their vacancies. This approach not only saves time for teachers but also improves efficiency for school hiring processes — ultimately fostering better matches between schools and educators. The platform will be particularly beneficial for state schools facing staffing shortages, providing them with access to a broad and diverse pool of qualified candidates.
-  </p>
-<br>
-  <p style="text-align:center;"><strong>Preview the TeacherSearch prototype:</strong> <a href="https://teacher-app-service-27253155079.europe-west1.run.app/" target="_blank">Try the Demo</a></p>
+  <p>Designed with teachers in mind, this platform eliminates the need for repetitive, manual form-filling across different schools and institutions. Instead, educators can create a comprehensive, centralised profile detailing their qualifications, experience, and teaching preferences. Schools will then be able to search, filter, and connect directly with suitable candidates who have expressed interest in their vacancies. This approach not only saves time for teachers but also improves efficiency for school hiring processes — ultimately fostering better matches between schools and educators. The platform will be particularly beneficial for state schools facing staffing shortages, providing them with access to a broad and diverse pool of qualified candidates.</p><br>
+  <p style="text-align:center;"><strong>Preview the TeacherSearch prototype:</strong> <a href="https://teachersearch.uk/" target="_blank">Try the Demo</a></p>
 </section>
 
 <section id="fractionalcalc">
   <h2>Fractional Calculus Course</h2>
-  <p>Our <strong>Fractional Calculus Course</strong> aims to foster independent mathematical research and innovation among AS and A2 Further Mathematics students, focusing on advanced topics in fractional and complex-order calculus. By engaging in original mathematical investigation — from conceptual formulation to numerical experimentation and formal exposition — students will :
-  </p>
+  <p>Our <strong>Fractional Calculus Course</strong> aims to foster independent mathematical research and innovation among AS and A2 Further Mathematics students, focusing on advanced topics in fractional and complex-order calculus. By engaging in original mathematical investigation — from conceptual formulation to numerical experimentation and formal exposition — students will :</p>
   <ul>
     <li>Develop research-level mathematical thinking</li>
     <li>Acquire LaTeX and academic writing skills applicable to university-level mathematics</li>
@@ -149,7 +177,7 @@ Built on advanced natural language processing and reinforcement learning, the sy
     <li>Produce a publishable research paper to be submitted to the arXiv preprint server or other undergraduate mathematical journals, which they can put in their personal statements</li>
     <li>Provide a structured and rigorous alternative to the EPQ, especially for students interested in pure mathematics where humanities-related topics are more preferred</li>
   </ul>
-  <p>Please contact <a href="mailto:isaacteng@ireducation.org">isaacteng@ireducation.org</a> for any enquiries.</p>
+  <p>Please contact <a href="mailto:isaacteng@ireducation.org" target="_blank">isaacteng@ireducation.org</a> for any enquiries.</p>
 <br>
   <p style="text-align:center;"><a href="https://isaactengchithang.wordpress.com/wp-content/uploads/2025/08/fractional-calculus-project-proposal.pdf" target="_blank">View Course Outline (PDF)</a></p>
 </section>
@@ -167,7 +195,7 @@ Built on advanced natural language processing and reinforcement learning, the sy
 <section id="contact">
   <h2>Contact Us</h2>
   <p>To partner with us, request a demo, or join our platform, please get in touch:</p>
-  <p>Email: <a href="mailto:ireducationinc@gmail.com" target="_blank".    >ireducationinc@gmail.com</a></p>
+  <p>Email: <a href="mailto:ireducationinc@gmail.com" target="_blank">ireducationinc@gmail.com</a></p>
   <p>Locations: Hong Kong | Mainland China | United Kingdom</p>
 </section>
 
