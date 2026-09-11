@@ -195,6 +195,12 @@ section > ul {
   max-width: 850px;
 }
 
+section > p,
+.profile p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 p {
   margin: 0 0 1rem;
 }
@@ -215,6 +221,7 @@ strong {
 .iframe-wrapper {
   position: relative;
   width: 100%;
+  max-width: 850px;
   margin: 2.5rem 0 0;
   aspect-ratio: 16 / 9;
   overflow: hidden;
@@ -232,6 +239,7 @@ strong {
 }
 
 .profile-section {
+  max-width: 850px;
   margin-top: 1rem;
   padding: 1.25rem;
   background: var(--soft);
